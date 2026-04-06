@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Level Bronco - Shop</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg bg-black fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <h3>Level Bronco</h3>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active botones" aria-current="page" href="#contact" style="color: white;">Contacto</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle botones" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false" style="color: white;">
+                Zona gamer
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#top">Juegos</a></li>
+                <li><a class="dropdown-item" href="#equipos">Equipos</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <br><br><br>
+  <hr style="margin-top: -4px;">
+  <h3 style="font-size: 15px; text-align: center; margin-top: -30px;">Los juegos mas populares</h3>
+  <br><br>
+
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/forest.jpeg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>The Forest</h5>
+          <p style="color:aliceblue !important">Un juego de supervivencia en un entorno forestal.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/silksong.jpeg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Silksong: Hollow Knight</h5>
+          <p style="color:aliceblue !important">Una aventura en un mundo lleno de secretos</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/left.jpeg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Left 4 Dead 2</h5>
+          <p style="color:aliceblue !important">Sobrevive a una oleada de infectados.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+  </div>
+
+  <br><br><br><br><br><br><br>
+
+  <div id="top">
+    <a href="#top" style="text-decoration: none;">
+      <h4 style="color: white !important;">
+        Top en juegos
+      </h4>
+    </a>
+    <p>
+      Descubre los juegos mas populares del momento, con las mejores ofertas y descuentos.
+    </p>
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-3 g-4 espacio">
+    <div class="col sizemás">
+      <div class="card h-100">
+        <img src="img/cod.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Call of Duty - Warzone</h5>
+          <p class="card-text">Uno de los mejores shooters online.</p>
+        </div>
+        <div class="card-footer">
+          <button type="button" class="btn btn-outline-secondary">COMPRAR</button>
+        </div>
+      </div>
+    </div>
+    <div class="col sizemás">
+      <div class="card h-100">
+        <img src="img/rust.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Rust</h5>
+          <p class="card-text">Sobrevive en un entorno hostil.</p>
+        </div>
+        <div class="card-footer">
+          <button type="button" class="btn btn-outline-secondary">COMPRAR</button>
+        </div>
+      </div>
+    </div>
+    <div class="col sizemás">
+      <div class="card h-100">
+        <img src="img/val.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Valorant</h5>
+          <p class="card-text">Estrategia táctica en equipo.</p>
+        </div>
+        <div class="card-footer">
+          <button type="button" class="btn btn-outline-secondary">COMPRAR</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br><br><br><br><br><br><br>
+
+  <div id="retros">
+    <a href="#retros" style="text-decoration: none;">
+      <h4 style="color: white !important;">
+        Nuestros juegos retros
+      </h4>
+    </a>
+    <p>
+      Recuerda los clasicos que marcaron una epoca.
+    </p>
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-3 g-4 espacio">
+    <div class="col sizemás">
+      <div class="card h-100">
+        <img src="img/mario bros.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Mario Bros</h5>
+          <p class="card-text">Un juego de plataformas clásico.</p>
+        </div>
+        <div class="card-footer">
+          <button type="button" class="btn btn-outline-secondary">COMPRAR</button>
+        </div>
+      </div>
+    </div>
+    <div class="col sizemás">
+      <div class="card h-100">
+        <img src="img/juego pacman.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Pacman</h5>
+          <p class="card-text">Demuestra que eres el mas agil.</p>
+        </div>
+        <div class="card-footer">
+          <button type="button" class="btn btn-outline-secondary">COMPRAR</button>
+        </div>
+      </div>
+    </div>
+    <div class="col sizemás">
+      <div class="card h-100">
+        <img src="img/boomberman.avif" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Boomberman</h5>
+          <p class="card-text">Acción explosiva para eliminar enemigos.</p>
+        </div>
+        <div class="card-footer">
+          <button type="button" class="btn btn-outline-secondary">COMPRAR</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br><br><br><br><br><br><br>
+
+  <div id="equipos">
+    <a href="#equipos" style="text-decoration: none;">
+      <h4 style="color: white !important;">
+        Consolas Gaming
+      </h4>
+    </a>
+    <p>
+      Equipate con las mejores consolas del mercado.
+    </p>
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-3 g-4 espacio">
+    <div class="col sizemás">
+      <div class="card h-100">
+        <img src="img/spider play.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Play Station - Spiderman Edition</h5>
+          <p class="card-text">Consola de última generación.</p>
+        </div>
+        <div class="card-footer">
+          <button type="button" class="btn btn-outline-secondary">COMPRAR</button>
+        </div>
+      </div>
+    </div>
+    <div class="col sizemás">
+      <div class="card h-100">
+        <img src="img/consola xbox.avif" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Xbox Series X</h5>
+          <p class="card-text">Grandes graficos y potencia.</p>
+        </div>
+        <div class="card-footer">
+          <button type="button" class="btn btn-outline-secondary">COMPRAR</button>
+        </div>
+      </div>
+    </div>
+    <div class="col sizemás">
+      <div class="card h-100">
+        <img src="img/nintendo switch.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Nintendo Switch</h5>
+          <p class="card-text">Juega en casa o en movimiento.</p>
+        </div>
+        <div class="card-footer">
+          <button type="button" class="btn btn-outline-secondary">COMPRAR</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br><br><br><br><br><br><br><br><br><br>
+
+  <footer class="footer">
+    <div class="footcont">
+      <div class="flex">
+        <div class="colum">
+          <h4 id="contact">Contacto</h4>
+          <ul>
+            <li><a href="https://web.whatsapp.com/">Tel: 997 335 036</a></li>
+            <li><a href="https://workspace.google.com/intl/es-419/products/gmail/">Email: levelbronco@juegos.com</a>
+            </li>
+            <li><a href="https://web.telegram.org/a/">Telegram: @levelbronco</a></li>
+          </ul>
+        </div>
+        <div class="colum">
+          <h4>Medios de pago</h4>
+          <ul>
+            <li><a href="https://www.viabcp.com/">Visa</a></li>
+            <li><a href="https://www.mastercard.com/pe/es.html">Mastercard</a></li>
+            <li><a href="https://www.yape.com.pe/">Yape</a></li>
+          </ul>
+        </div>
+        <div class="colum">
+          <h4>Redes</h4>
+          <ul>
+            <li><a href="https://www.facebook.com/">Facebook</a></li>
+            <li><a href="https://www.instagram.com/">Instagram</a></li>
+            <li><a href="https://x.com/">Twitter</a></li>
+          </ul>
+        </div>
+        <div class="colum">
+          <h4>Ubicanos</h4>
+          <ul>
+            <li><a href="#">San borja - La Rambla</a></li>
+            <li><a href="#">San Isidro - Av. Principal</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <footer style="background-color: #333; color: white; text-align: center; padding: 10px 0;">
+    <hr>
+    <h3 style="margin-top: -50px;">Level Bronco</h3>
+    <br>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

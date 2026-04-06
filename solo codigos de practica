@@ -1,0 +1,152 @@
+css: 
+/* este carrusel es exclusivo de */
+
+.carrusel2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    gap: 16px;
+    transition: 0.3s;
+}
+
+.carrusel2 section {
+    overflow: hidden;
+    position: relative;
+    flex: 0 0 80px;
+    border-radius: 50px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1.2px solid #eee;
+    box-shadow: 5px 10px 15px rgba(255, 255, 255, 0.5),
+                -2px -5px 10px rgba(255, 255, 255, 0.5);
+}
+
+.carrusel2 section img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+}
+
+.carrusel2 section,
+.carrusel2 section img {
+    transition: 0.3s;
+}
+
+.carrusel2 section{
+    transition: 1.5s ease;
+}
+
+.carrusel2 span{
+    text-align: center;
+    width: 75%;
+}
+
+.carrusel2 h2{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 4px;
+    margin-bottom: 3px;
+    white-space: nowrap;
+    color: #eee;
+}
+
+.carrusel2 p{
+    font-weight: 100%;
+    font-size: 10px;
+    color: #ddd;
+}
+
+.carrusel2 section .carru{
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   z-index: 1;
+   color: #eee;
+   padding: 15px;
+   background: linear-gradient(rgba(0, 0, 0, 0.5),
+   (rgba(0, 0, 0, 0.5))
+   );
+   opacity: 0;
+   visibility: hidden;
+}   
+
+.carrusel2 :hover{
+    gap: 0;
+}
+
+.carrusel2 section .carru span{
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+    bottom: 0px;
+    scale: 0.85;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.carrusel2 section:hover{
+    flex: 0 1 260px;
+    scale: 1.1;
+    z-index: 10;
+    opacity: 1;
+}
+
+.carrusel2 section:hover .carru{
+    opacity: 1;
+    visibility: visible;
+}
+
+.carrusel2 section:hover .carru span{
+    scale: 1;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+html:
+  <div class="carrusel2">
+    <section>
+      <img src="img/cod.jpg" alt="">
+      <div class="carru">
+        <span>
+          <h2>Call of Duty</h2>
+          <p>Precio: $59.99</p>
+        </span>
+      </div>
+    </section>
+    <section>
+      <img src="img/forest.jpeg" alt="">
+      <div class="carru">
+        <span>
+          <h2>The Forest</h2>
+          <p>Precio: $29.99</p>
+        </span>
+      </div>
+    </section>
+    <section>
+      <img src="img/left.jpeg" alt="">
+      <div class="carru">
+        <span>
+          <h2>Left 4 Dead</h2>
+          <p>Precio: $29.99</p>
+        </span>
+      </div>
+    </section>
+    <section>
+      <img src="img/silksong.jpeg" alt="">
+      <div class="carru">
+        <span>
+          <h2>Silksong</h2>
+          <p>Precio: $39.99</p>
+        </span>
+      </div>
+    </div>
+  </div>
+

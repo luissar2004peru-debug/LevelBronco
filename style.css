@@ -1,0 +1,315 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap'); /*fuente importado para el h3 */
+
+body {
+    background-color: rgb(0, 0, 0); /*fondo negro */
+}
+
+h3 {
+    color: rgb(255, 255, 255);
+    font-family: "Silkscreen", sans-serif;
+
+}
+
+hr {
+    color: white;
+    margin-bottom: 80px;                    /*lo uso para hacer mas grande la parte de abajo */
+}
+
+h4 {
+    color: white;
+    padding-left: 20px;                     /*espacio para el lado izquierdo dentro del h4 */
+}
+
+p {
+    color: rgb(111, 110, 110);
+    padding-left: 20px;                     /*espacio al lado izquierdo dentro del p */
+}
+
+/*uso esto para cambiar el boton de hamburguesa que sale cuando se ve desde un celular*/
+.navbar-toggler-icon {
+    filter: invert(1) !important; /* invierte el color */
+}
+
+/*botones decorados*/
+.botones {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 15px;                      /* Espacio interno del botón */
+    border-radius: 20px;
+    transition: 0.5s;                       /*me sirve para darle un tiempo al cambio que tendra el boton cuando paso el mouse por encima*/
+    margin-left: 30px;                      /* Margen izquierdo*/
+    border: 2px solid transparent;          /*borde invisible para que no me haga saltos cuando empiece el hover*/
+}
+
+/* Efecto visual al pasar el mouse por los botones */
+.botones:hover {
+    background-color: #222222;                                 /*se vueleve de color gris*/
+    border-color: #ffffff;                                     /*para el borde blanco que complementa al efecto de iluminación*/
+    box-shadow: 0 0 5px #ffffff, 0 0 15px #ffffff;           /*sombras para dar efecto de neon*/
+}
+
+/*para dar espacio de margen*/
+.espacio {
+    margin: 35px;                 /* Margen en todos los lados */
+}
+
+/*posicion de las primeras imagenes de la pagina de inicio*/
+.galeria {
+    display: flex;                /*aplica diseño para todas las imagenes*/
+    justify-content: center;      /*centra el contenido horizontalmente*/
+    align-items: center;          /* Centra verticalmente */
+}
+
+/* Estilos para las imágenes dentro de la galería */
+.galeria img {
+    object-fit: cover;            /* Ajusta imagen sin deformar */
+    width: 20%;                   /* Ancho inicial ajustado para móviles*/
+    height: 21.875rem;                /* Altura de 350px para aprovechar pantallas de 2400px de alto */
+    transition: all ease-in-out 0.5s;
+}
+
+/*efecto que tendra el carrusel*/
+.galeria img:hover {
+    width: 35%;                   /* hace que la imagen se expanda al pasar el mouse por encima*/
+}
+
+/* Efecto para agrandar ligeramente*/
+.sizemás {
+    transition: 0.2s ease-in-out;
+}
+
+.sizemás:hover {
+    transform: scale(1.03);      /*aumenta el tamaño al pasar el mouse*/
+}
+
+/*contenedores*/
+.prin {
+    display: flex;               /*flexbox para organizar los divs internos*/
+    flex-wrap: wrap;             /*permite que los elementos bajen de línea */
+    gap: 30px;
+    justify-content: center;     /*Centra los divs*/
+    margin: 20px;
+}
+
+/* Estilo de las cards*/
+.celda {
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 20px; 
+    width: 100%;                       /*Ancho para celular*/
+    max-width: 450px;                  /*limite de ancho máximo */
+    display: flex;                     /*Flexbox interno */
+    align-items: center;               /*Centrado vertical interno */
+    justify-content: center;           /*Centrado horizontal interno */
+    overflow: hidden;                  /*oculta el contenido que se quiere salir del borde*/
+    box-sizing: border-box;            /*Incluye padding y borde en el ancho total */
+}
+
+/* Imágenes dentro de las celdas */
+.celda img {
+    width: 100%;             /* Ocupa todo el ancho disponible */
+    height: 250px;           /* Altura fija para uniformidad */
+    object-fit: cover;       /* Recorta imagen para llenar el contenedor */
+    display: block;          /* Elimina espacios vacíos inferiores */
+    border-radius: 15px;     /* Redondeo de esquinas de la imagen */
+}
+
+/* Contenedor interno de la celda */
+.contenido-celda {
+    display: flex;
+    flex-direction: column; /* Alinea imagen arriba y texto abajo */
+    align-items: center;    /* Centra ambos horizontalmente */
+    width: 100%;
+}
+
+/* Ajuste de la imagen */
+.contenido-celda img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    display: block;
+}
+
+/* Contenedor del texto */
+.texto-inferior {
+    width: 100%;
+    margin-top: 15px;      /* Espacio entre la imagen y el texto */
+    text-align: center;    /* Centra el texto */
+}
+
+/* Estilo de <p> esta vez aplicando el !important dentro de css y ya no dentro de html */
+.texto-inferior p {
+    color: white !important;
+    font-family: "Silkscreen", sans-serif !important;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0 !important; /* IMPORTANTE: Esto quita los 20px de la izquierda */
+    letter-spacing: 2px;
+}
+
+/* Efecto de agrandado para toda la celda */
+.celda:hover {
+    transform: scale(1.02);
+    transition: 0.3s ease;
+    border-color: #ffffff;
+    box-shadow: 0 0 10px rgba(255,255,255,0.5);
+}
+
+/* Adaptación para pantallas de pc */
+@media (min-width: 768px) {
+    .prin { 
+        gap: 50px;              /* Aumenta mucho el espacio entre celdas */
+        margin: 35px;           /* Margen externo mayor */
+    }
+    
+    .celda {
+        flex-wrap: wrap;        /* Celdas más anchas en PC */
+    }
+}
+
+/*estilos para el footer*/
+
+.footer {
+    background-color: #333;
+    padding: 50px 20px; 
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; /* Apila las columnas verticalmente en celular */
+    gap: 20px; /* Espacio uniforme entre secciones en móvil */
+}
+
+a{
+    text-decoration: none;
+    color: rgba(255,255,255,0.5);
+    transition: color 0.3s ease, padding 0.3s ease;
+}
+
+ul {
+    list-style: none;
+    padding: 0; 
+}
+
+.footcont {
+    max-width: 1370px;
+    margin: auto;
+}
+
+.colum {
+    width: 100%; /* Las columnas ocupan todo el ancho en móvil */
+    padding: 0 10px;
+    margin-bottom: 30px; /* Separación entre bloques de información */
+}
+
+.colum h4 {
+    position: relative;
+    font-size: 18px;
+    color: white;
+    margin-left: -20px;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+.colum h4::before {
+    content: '';
+    position: absolute;
+    left: 0; /* Alineado al borde en móvil para mejor legibilidad */
+    bottom: -10px;
+    background-color: aquamarine;
+    height: 2px;
+    width: 80px; /* Línea un poco más corta para pantallas pequeñas */
+}
+
+.colum ul li {
+    margin-bottom: 12px;
+}
+
+.colum ul li a:hover {
+    color: white;
+    padding-left: 4px;
+}
+
+/* --- ESTILOS PARA PC (PANTALLAS GRANDES) --- */
+
+@media (min-width: 768px) {
+    .footer {
+        padding: 70px; /* Recupera el padding amplio original */
+    }
+
+    .flex {
+        flex-direction: row; /* Cambia de vertical a horizontal */
+        justify-content: space-between; /* Distribuye las columnas uniformemente */
+    }
+
+    .colum {
+        width: 25%; /* Cada columna vuelve a ocupar su cuarta parte */
+        margin-bottom: 0; /* Quita el margen inferior excesivo del móvil */
+    }
+
+    .colum h4::before {
+        width: 150px; /* Recupera el largo original de la línea */
+        left: 0; 
+    }
+
+    .colum ul li {
+        margin-left: 0; /* Limpia ajustes específicos de móvil si fuera necesario */
+    }
+}/* --- ESTILOS MÓVIL (APILADOS) --- */
+
+.footer {
+    background-color: #333;
+    padding: 50px 20px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column; /* Uno debajo de otro en celular */
+    gap: 30px;
+    max-width: 1370px;
+    margin: auto;
+}
+
+.colum {
+    width: 100%; /* Ocupa todo el ancho en celular */
+}
+
+.colum h4 {
+    position: relative;
+    font-size: 18px;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.colum h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: aquamarine;
+    height: 2px;
+    width: 175px; 
+}
+
+
+@media (min-width: 992px) { 
+    .footer {
+        padding: 70px 0;
+    }
+
+    .flex {
+        flex-direction: row; 
+        flex-wrap: nowrap;   /* Evita que "Ubícanos" se baje */
+        justify-content: space-between; /* Distribuye espacio equitativo */
+        align-items: flex-start;
+    }
+
+    .colum {
+        /* Dividimos 100% entre 4 columnas = 25% cada una */
+        width: 25%; 
+        padding: 0 15px;
+    }
+}
